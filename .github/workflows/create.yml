@@ -19,11 +19,11 @@ jobs:
         with:
           path: backports
 
-      - name: Checkout kernel 6.1
+      - name: Checkout kernel next
         uses: actions/checkout@v4
         with:
           repository: gregkh/linux
-          ref: refs/heads/linux-6.1.y
+          ref: refs/heads/next-20250321
           path: linux
 
       - name: Generate backports tar
