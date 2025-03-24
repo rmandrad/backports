@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: gregkh/linux
-          ref: refs/heads/next-20250321
+          ref: refs/heads/master
           path: linux
 
       - name: Generate backports tar
@@ -55,7 +55,7 @@ jobs:
     strategy:
       matrix:
         kernel: [
-           "next-20250321"]
+           "next-master"]
         config: [
            allyesconfig,
            defconfig-wifi]
